@@ -99,25 +99,32 @@ The output from these workshops can be used to discover, validate or design soft
 
    ##### Grammar:
    {{< table "table" >}}
-      | Term | Definition | Rules |
-      | --- | --- | --- |
-      | <h4>Events</h4> | Represent a state change or notification that another part of the system wants to react upon. They can be raised as a result of an Action or raised automatically as a Timed Event. | <ul><li>An Event can be raised by many Actions.</li> <li>An Event can be listened to by many Policies.</li> <li>Events used in preconditions are assumed to be timed or modeled elsewhere and do not need additional grammar.</li> <li>Timed Events do not need to be raised by an Action.</li> <li>Timed Events should be identified with a symbol or tag on the Event sticky.</li></ul> |
-      | <tr><td colspan=3> ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-preconditions.jpg) ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-timed-events.jpg) ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-events.jpg)  </td></tr> |
-      | <h4>Policies</h4> | Represent a decision to perform a task. Sometimes this is written as a short sentence or can be labeled and described somewhere else. Policies can be manually performed by an Actor or automated by an IT system. | <ul> <li>A Policy listens to a single Event.</li>  <li>A Policy should call one Action per decision outcome.</li> <li>Multiple Policies can call the same Action.</li> <li>A Policy description should include the Event they are listening to, an Actor if one is required, a decision to be made and an Action to take. </li> <li>A manual Policy should have an actor.</li> <li>An automated Policy should not have an actor.</li>  </ul> |
-      | <tr><td colspan=3> ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-policies.jpg) ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-policy-description.jpg) ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-policy-type.jpg)  </td></tr> |
-      | <h4>Actions</h4> | Represent a tasks that must be performed due to policy, and produces one or more interesting events. Also called Commands. | <ul> <li>An Action can require multiple Systems.</li> <li>An Action can raise multiple Events.</li> <li>If an Action raises more than one event, these should be placed in a column, with the most pivotal events at the top.</li> <li>Multiple Actions can raise the same Event.</li> </ul> | |
-      | <tr><td colspan=3> ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-actions.jpg) ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-actions-systems.jpg) </td></tr> |
-      | <h4>Actors</h4> | Represent a human interaction and should be placed with policies to identify who is responsible for making the decision and performing the Action. A policy without an actor is automated. | | |
-      | <tr><td colspan=3> ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-actors.jpg) </td></tr> |
-      | <h4>Read Models</h4> | Represent data required to make decisions or perform Actions. Read Models should be small chunks of relevant structures or fields. | <ul> <li>Multiple Read Models can be assigned to a Policy.</li> <li>Read Models can be duplicated to multiple Policies.</li></ul> |
-      | <tr><td colspan=3> ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-readmodels.jpg) </td></tr> |
-      | <h4>Systems</h4> | Represent 3rd party tools such as; email, excel, notepad, or any required commercial off the shelf (COTS) applications. | <ul> <li>Systems used by multiple Actions can be duplicated for each Action. You can also add tools developed in-house, that are outside of the scope of the project you are working on</li> </ul>  |
-      | <tr><td colspan=3> ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-systems.jpg) </td></tr> |
+   | Term | Definition | Rules |
+   | --- | --- | --- |
+   | ddf | sadsad | sadsad |
+   {{< table "/table" >}}
 
-      | Legend |  |
-      | --- | --- |
-      | ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-legend.jpg) | ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-overview.jpg) |
-   {{< /table >}}
+   {{< table "table" >}}
+   | Term | Definition | Rules |
+   | --- | --- | --- |
+   | <h4>Events</h4> | Represent a state change or notification that another part of the system wants to react upon. They can be raised as a result of an Action or raised automatically as a Timed Event. | <ul><li>An Event can be raised by many Actions.</li> <li>An Event can be listened to by many Policies.</li> <li>Events used in preconditions are assumed to be timed or modeled elsewhere and do not need additional grammar.</li> <li>Timed Events do not need to be raised by an Action.</li> <li>Timed Events should be identified with a symbol or tag on the Event sticky.</li></ul> |
+   |<td colspan=3> ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-preconditions.jpg) ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-timed-events.jpg) ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-events.jpg)  </td> |
+   | <h4>Policies</h4> | Represent a decision to perform a task. Sometimes this is written as a short sentence or can be labeled and described somewhere else. Policies can be manually performed by an Actor or automated by an IT system. | <ul> <li>A Policy listens to a single Event.</li>  <li>A Policy should call one Action per decision outcome.</li> <li>Multiple Policies can call the same Action.</li> <li>A Policy description should include the Event they are listening to, an Actor if one is required, a decision to be made and an Action to take. </li> <li>A manual Policy should have an actor.</li> <li>An automated Policy should not have an actor.</li>  </ul> |
+   | <td colspan=3> ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-policies.jpg) ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-policy-description.jpg) ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-policy-type.jpg)  </td> |
+   | <h4>Actions</h4> | Represent a tasks that must be performed due to policy, and produces one or more interesting events. Also called Commands. | <ul> <li>An Action can require multiple Systems.</li> <li>An Action can raise multiple Events.</li> <li>If an Action raises more than one event, these should be placed in a column, with the most pivotal events at the top.</li> <li>Multiple Actions can raise the same Event.</li> </ul> | |
+   | <td colspan=3> ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-actions.jpg) ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-actions-systems.jpg) </td> |
+   | <h4>Actors</h4> | Represent a human interaction and should be placed with policies to identify who is responsible for making the decision and performing the Action. A policy without an actor is automated. | | |
+   | <td colspan=3> ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-actors.jpg) </td> |
+   | <h4>Read Models</h4> | Represent data required to make decisions or perform Actions. Read Models should be small chunks of relevant structures or fields. | <ul> <li>Multiple Read Models can be assigned to a Policy.</li> <li>Read Models can be duplicated to multiple Policies.</li></ul> |
+   | <td colspan=3> ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-readmodels.jpg) </td> |
+   | <h4>Systems</h4> | Represent 3rd party tools such as; email, excel, notepad, or any required commercial off the shelf (COTS) applications. | <ul> <li>Systems used by multiple Actions can be duplicated for each Action. You can also add tools developed in-house, that are outside of the scope of the project you are working on</li> </ul>  |
+   | <td colspan=3> ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-systems.jpg) </td> |
+   {{< table "/table" >}}
+   {{< table "table" >}}
+   | Legend |
+   | --- |
+   | ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-legend.jpg) ![This is the placeholder for process modelling grammar](images/process-modelling-grammar-overview.jpg) |
+   {{< table "/table" >}}
    &nbsp;
    ##### Questions:
    If an assumption is being made or there is no way to clarify parts of the process with the people in the room, leave a question on the board and return to it later with the right people or new information.
@@ -224,6 +231,13 @@ Writing Policies can be important to ensure you have the correct flow and captur
 
 #### Thin Slices: 
 Thin Slices can be heavily influenced by the goals of your project, but a good start might be to pick out a golden path and reduce it to the least set of events required to achieve the final outcome.
+
+## Real World Examples
+![This is the placeholder for sample 1](images/process-modelling-a-short-story.jpg)
+![This is the placeholder for sample 1](images/sample-event-storming-and-modelling.JPG)
+![This is the placeholder for sample 1](images/sample-process-modelling-and-boris.JPG)
+![This is the placeholder for sample 1](images/sample-process-modelling.JPG)
+![This is the placeholder for sample 1](images/sample-software-design-board.JPG)
 
 ## Recommended Reading
 - [Alberto Brandolini - 50,000 Orange Stickies and Counting](https://www.youtube.com/watch?v=1i6QYvYhlYQming/)
